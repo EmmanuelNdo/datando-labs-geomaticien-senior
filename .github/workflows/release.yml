@@ -1,0 +1,26 @@
+name: Publier le skill
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Construire l'archive du skill
+        run: |
+          mkdir -p dist
+          zip -r dist/geomaticien-senior-open-source.zip geomaticien-senior-open-source -x "*.DS_Store"
+
+      - name: Publier la release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/geomaticien-senior-open-source.zip
+          generate_release_notes: true

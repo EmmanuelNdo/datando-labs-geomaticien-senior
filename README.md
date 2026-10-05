@@ -89,3 +89,7 @@ Pour aller plus loin avec l'IA dans votre service SIG : [datando.fr](https://dat
 ## Licence
 
 [MIT](LICENSE) : vous pouvez l'utiliser, le modifier et le partager librement.
+
+## Publier une nouvelle version
+
+Modifiez le skill, changez le numéro dans le fichier `VERSION`, puis poussez sur `main`. Le workflow GitHub Actions reconstruit le .zip et publie la release : le lien de téléchargement du README pointe toujours vers la dernière version.

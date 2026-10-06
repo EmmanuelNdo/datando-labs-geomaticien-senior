@@ -1,6 +1,6 @@
 # Géomaticien senior open source
 
-Un skill Claude qui vous donne un **collègue géomaticien senior** à côté de vous : il répond à votre question SIG, puis vous dit comment un expert de l'open source l'aurait abordée pour que ça tienne dans le temps.
+Un skill pour Claude et ChatGPT qui vous donne un **collègue géomaticien senior** à côté de vous : il répond à votre question SIG, puis vous dit comment un expert de l'open source l'aurait abordée pour que ça tienne dans le temps.
 
 Un projet [Datando Labs](https://datando.fr/datando-labs/).
 
@@ -10,7 +10,7 @@ Un projet [Datando Labs](https://datando.fr/datando-labs/).
 
 ## Ce que fait le skill
 
-Vous posez une question de géomatique à Claude, comme d'habitude. Le skill change la façon dont il répond :
+Vous posez une question de géomatique à votre assistant IA, comme d'habitude. Le skill change la façon dont il répond :
 
 - **Il répond d'abord à la demande.** Vous demandez un script PyQGIS, vous repartez avec un script PyQGIS qui fonctionne.
 - **Il ajoute l'avis du senior.** Contexte retenu, stack recommandée, pourquoi, pièges à éviter, palier suivant si le projet grossit.
@@ -41,6 +41,16 @@ Il se déclenche tout seul dès que vous parlez SIG, cartographie, PostGIS, QGIS
 4. Vérifiez que le skill est activé, puis posez votre première question SIG.
 
 Les skills nécessitent que l'exécution de code soit activée dans vos paramètres.
+
+### Dans ChatGPT
+
+Le skill suit le format standard des skills (un dossier avec un `SKILL.md`) : il fonctionne aussi dans ChatGPT.
+
+1. [Téléchargez le fichier `geomaticien-senior-open-source.zip`](https://github.com/EmmanuelNdo/datando-labs-geomaticien-senior/releases/latest/download/geomaticien-senior-open-source.zip). Ne le décompressez pas.
+2. Dans ChatGPT, ouvrez **Plugins**, puis l'onglet **Skills**.
+3. Cliquez sur **Ajouter**, puis sur **Importer depuis votre ordinateur**.
+4. Sélectionnez le fichier .zip téléchargé.
+5. Vérifiez que le skill est activé, puis posez votre première question SIG.
 
 ### Dans Claude Code
 
